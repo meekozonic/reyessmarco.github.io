@@ -1,0 +1,56 @@
+body{
+border: 2px solid black;
+background-image: url('back.jpg');
+background-repeat: no repeat;
+background-size: cover;
+}
+
+#header{
+background: 3FC5FF;
+border: 2px solid black;
+height: 60px;
+margin: 10px;
+opacity: 0.5;
+font-family: Century Gothic;
+}
+
+#form{
+background-image: url('bg.jpg');
+text-align: center;
+height: 350px;
+border: 1px solid white;
+width: 350px;
+border: 1px solid white;
+margin-top: 150px;
+margin-bottom: 150px; 
+margin-right: 200px;
+margin-left:200px;
+float:right;
+opacity: 0.9;
+}
+
+#centercontent{
+background-image: url('bg.jpg');
+text-align: left;
+height: 850px;
+border: 2px solid black;
+width: 1700px;
+border: 2px solid black;
+margin: 0 auto;
+margin-top: 10px;
+margin-right: auto;
+margin-bottom: 0;
+margin-left: auto;
+color: white;
+font-family: Century Gothic;
+}
+
+#footer{
+background: 3FC5FF;
+border: 2px solid black;
+height: 60px;
+margin: 10px;
+opacity: 0.5;
+font-family: Century Gothic;
+}
+

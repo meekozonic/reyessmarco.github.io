@@ -1,0 +1,51 @@
+<html>
+<head>
+  <link rel="stylesheet" href="lorstyle.css">
+  <title></title>
+</head>
+
+<body style="background-image: url('../hci/nba.jpg');">
+  <style>
+    .flow {
+      background-color: aliceblue;
+      max-width: 400px;
+      height: 175px;
+      padding: 15px;
+      overflow: scroll;
+    }
+  </style>
+
+  <div id="header">
+    <center><font color="orange"><h1>LOGIN AND REGISTER YOUR ACCOUNT</h1></center>
+  </div>
+
+  <div id="centercontent">
+    <div id="Form">
+
+      <div id="center-content">
+        <center><input type="text" id="UserName-field" placeholder="Username"></center>
+        <br>
+        <center><input type="password" id="Password-field" placeholder="Password"></center>
+        <br>
+        <center><input type="button" onclick="submitForm()" value="Login"></center>
+        <center><a href="lorenzo2.html"><button>Register</button></center>
+      </div>
+
+      <script>
+        function submitForm() {
+          var enterName = document.getElementById("UserName-field").value;
+          var enterPass = document.getElementById("Password-field").value;
+
+          if (enterName === "marcolrx" && enterPass === "123") {
+            alert("LOGIN SUCCESSFULLY!");
+            window.location.href = "lorenzo3.html";
+          } else {
+            alert("Wrong! Please check your input details and try again");
+          }
+        }
+      </script>
+    </div>
+  </div>
+</body>
+
+</html>

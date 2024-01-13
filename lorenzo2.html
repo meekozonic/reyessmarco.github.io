@@ -1,0 +1,44 @@
+<html>
+<head>
+    <link rel="stylesheet" href="lorstyle2.css">
+</head>
+<body style="background-image: url('../hci/nba.jpg');">
+    <div id="form">
+        <center><input type="text" id="fname" placeholder="Username"></center>
+        <center><input type="text" id="lname" placeholder="Password"></center>
+        <center><input type="date" id="bday" placeholder="Birthday"></center>
+        <center><input type="number" id="num" placeholder="Number"></center>
+        <center>
+            <input type="radio" name="gender" id="male" value="Male">
+            <label for="male">Male</label>
+        </center>
+        <center>
+            <input type="radio" name="gender" id="female" value="Female">
+            <label for="female">Female</label>
+        </center>
+        <center><input type="submit" onclick="submitForm()" value="Submit"></center>
+    </div>
+
+    <script>
+        function submitForm() {
+            var a = document.getElementById("fname").value;
+            var b = document.getElementById("lname").value;
+            var c = document.getElementById("bday").value;
+            var d = document.getElementById("num").value;
+
+            var gender = document.getElementsByName("gender");
+            var e;
+            for (var i = 0; i < gender.length; i++) {
+                if (gender[i].checked) {
+                    e = gender[i].value;
+                    break;
+                }
+            }
+
+            alert("Registered Successfully! Going back to Log In Page")
+            // Redirecting to another page after setting the innerHTML
+            window.location.href = "index.html"; // Replace "index.html" with your desired page
+        }
+    </script>
+</body>
+</html>

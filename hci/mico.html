@@ -1,0 +1,54 @@
+<html>
+<head>
+    <link rel="stylesheet" href="micostyle.css">
+</head>
+<body>
+    <div id="form">
+        <center><input type="text" id="fname" placeholder="First Name"></center>
+        <center><input type="text" id="lname" placeholder="Last Name"></center>
+        <center><input type="date" id="bday" placeholder="Birthday"></center>
+        <center><input type="number" id="num" placeholder="Number"></center>
+        <center>
+            <input type="radio" name="gender" id="male" value="Male">
+            <label for="male">Male</label>
+        </center>
+        <center>
+            <input type="radio" name="gender" id="female" value="Female">
+            <label for="female">Female</label>
+        </center>
+        <center><input type="submit" onclick="submitForm()" value="Submit"></center>
+    </div>
+
+    <div id="demo">
+        <center><p id="demoFname">First Name</p></center>
+        <center><p id="demoLname">Last Name</p></center>
+        <center><p id="demoBday">Birthday</p></center>
+        <center><p id="demoNum">Number</p></center>
+        <center><p id="demoGender">Gender</p></center>
+    </div>
+
+    <script>
+        function submitForm() {
+            var a = document.getElementById("fname").value;
+            var b = document.getElementById("lname").value;
+            var c = document.getElementById("bday").value;
+            var d = document.getElementById("num").value;
+            
+            var gender = document.getElementsByName("gender");
+            var e;
+            for (var i = 0; i < gender.length; i++) {
+                if (gender[i].checked) {
+                    e = gender[i].value;
+                    break;
+                }
+            }
+            
+            document.getElementById("demoFname").innerHTML = "First Name: " + a;
+            document.getElementById("demoLname").innerHTML = "Last Name: " + b;
+            document.getElementById("demoBday").innerHTML = "Birthday: " + c;
+            document.getElementById("demoNum").innerHTML = "Number: " + d;
+            document.getElementById("demoGender").innerHTML = "Gender: " + e;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+ 
+}
+
+.account-page {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.form-container-scrollbar {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.form-btnn h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #0011A4;
+}
+
+.btnn {
+  display: block;
+  width: 60%;
+  margin: 10px auto;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #FF2525;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.btnn:hover {
+  background-color: #2980b9;
+}
+

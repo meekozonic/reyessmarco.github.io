@@ -1,0 +1,40 @@
+body{
+border:2px solid black;
+background-image:url('kick.jpg')
+}
+#header{
+background-image:url('.jpg')
+border:2px solid black;
+height:60px;
+margin:10px;
+}
+#logo{
+margin: 10px;
+margin-top: -75px;
+margin-right: -90px
+margin-bottom: 0;
+margin-left: 10px;
+}
+#Form{
+margin: 10px;
+margin-right: 400px;
+margin-left: 250px;
+border:2px solid black;
+margin-bottom: 400px;
+margin-top: 160px;
+height: 150px;
+width: 1000px;
+}
+#centercontent{
+background: radial-gradient(#fff,#808080);
+text-align:left;
+border:2px solid black;
+height:300px;
+width:450px;
+margin:0 auto;
+margin-top: 150px;
+margin-right:auto;
+margin-bottom: 40;
+margin-left:auto;
+}
+

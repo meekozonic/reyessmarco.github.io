@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('blackhd.jpeg');
+    margin: 0;
+    padding: 0;
+}
+
+#form {
+    width: 20%;
+    margin: 20px auto;
+    padding: 20px;
+    background-image: linear-gradient(to top, #d4d4d4 , #9a9a9a,#707070);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"],
+input[type="radio"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #2E4053 ;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+center {
+    text-align: center;
+}
+
+#demo{
+width: 20%;
+    margin: 20px auto;
+    padding: 20px;
+     background-image: linear-gradient(to bottom, #d4d4d4 , #9a9a9a,#707070);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
